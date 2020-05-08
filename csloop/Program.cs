@@ -11,6 +11,7 @@ namespace csloop
     {
         static void Main(string[] args)
         {
+            /*
             long start = DateTime.Now.Ticks;
             long count = 0;
             while (start + (10000000) > DateTime.Now.Ticks)
@@ -28,6 +29,22 @@ namespace csloop
             {
                 Console.WriteLine(item);
             }
-        }
+            */
+
+            //지렁이
+            int x = 1;
+            while (x < 50)
+            {
+                Console.Clear();
+                Console.SetCursorPosition(x, 5);
+                if (x % 3 == 0)
+                    Console.WriteLine("__@");
+                else if (x % 3 == 1)
+                    Console.WriteLine("_^@");
+                else
+                    Console.WriteLine("^_@");
+                Thread.Sleep(100);
+                x++;
+            }
     }
 }
